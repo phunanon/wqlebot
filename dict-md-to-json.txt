@@ -1,0 +1,14 @@
+^\|(..(?:..)?)\|.+?\|.+?\|(.*?)\|.+
+{"native": "$1", "foreign": ["$2"], "genre": "noun", "provision": "official"},
+
+^\|.{2,4}\|(...|.....)\|.+?\|.*?\|(.*?)\|.+
+{"native": "$1", "foreign": ["$2"], "genre": "adjective", "provision": "official"},
+
+^\|.{2,4}\|.{3,5}\|(...|.....)\|.*?\|.*?\|(.+?)\|.+
+{"native": "$1", "foreign": ["$2"], "genre": "t. verb", "provision": "official"},
+
+^\|.{2,4}\|.{3,5}\|(...|.....)\|.*?\|.*?\|.*?\|(.*?)\|.+
+{"native": "$1", "foreign": ["$2"], "genre": "i. verb", "provision": "official"},
+
+(\w),(\w)
+$1", "$2
